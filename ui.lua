@@ -638,7 +638,7 @@ end
 function Hide(notify: boolean?)
 	Debounce = true
 	if notify then
-		RayfieldLibrary:Notify({Title = "Interface Hidden", Content = "The interface has been hidden, you can unhide the interface by tapping K", Duration = 7})
+		RayfieldLibrary:Notify({Title = "Aviso", Content = "O script foi minimizado clique K para abrir novamente", Duration = 7})
 	end
 	TweenService:Create(Main, TweenInfo.new(0.5, Enum.EasingStyle.Quint), {Size = UDim2.new(0, 470, 0, 400)}):Play()
 	TweenService:Create(Main.Topbar, TweenInfo.new(0.5, Enum.EasingStyle.Quint), {Size = UDim2.new(0, 470, 0, 45)}):Play()
